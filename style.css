@@ -11,40 +11,45 @@ html{
 
 body{
     font-size: 1.6rem;
+    background-color: rgba(107, 107, 194, 0.521);
 }
 
 
 .main--contenedor{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 5vh;
+    overflow: hidden;
+
+
 }
 
 .main--contenedor__ruleta{
-    
-    height: 70vh;
 
-    /* background-color: blue; */
+    height: 65vh;
+    
     
 }
 
 .ruleta__marcador{
-    position: absolute;
-    clip-path: polygon(0 10px,60px 0,60px 20px);
+    position: relative;
+    clip-path: polygon(0px 0px,10px 60px,20px 0px);
     background: red;
-    box-shadow: 15px 13px 1px 1px rgb(161, 161, 161);
-    width: 60px;
-    height: 20px;
-    right: 34%;
-    /* z-index: -10; */
+    /* box-shadow: 15px 13px 1px 1px rgb(161, 161, 161); */
+    width: 20px;
+    height: 60px;
+    top: 10vh;
+    z-index: 1;
 }
 
 .main--contendor__boton_sorteo{
     padding: 10px;
     border-radius: 50px;
     background-color: #de5454;
-    box-shadow: 15px 10px 30px 5px rgb(204, 204, 204);
+    /* box-shadow: 15px 10px 30px 5px rgb(204, 204, 204); */
+    z-index: 1;
 }
