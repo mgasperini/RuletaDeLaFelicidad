@@ -56,7 +56,7 @@ for (var i = 0; i < array_salidas.length; i++) {
       (i * 2 * Math.PI) / array_salidas.length
   );
   context.translate(-center, -center);
-  context.font = "10px Sans Serif";
+  context.font = "8px Sans Serif";
   context.textAlign = "right";
   context.fillStyle = "black";
   context.fillText(array_salidas[i], canvas.width - 30, center);
@@ -66,7 +66,7 @@ for (var i = 0; i < array_salidas.length; i++) {
   // context.lineWidth = 1; 
   // context.strokeText(array_salidas[i] , canvas.width - 30, center);
   // context.stroke();
-  
+
   context.restore();
 }
 
@@ -122,6 +122,11 @@ function sortear() {
           document.getElementById("id_estado").innerText = "Sortear";
           move = true;
           
+          console.log(pos_ini,((2 * Math.PI) / array_salidas.length) == 0)
+      }
+
+      if(pos_ini % ((2 * Math.PI) / array_salidas.length) == 0 ){
+        pos_ini+=10;
       }
     
 }
