@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+html{
+
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+
+.main--contenedor{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main--contenedor__ruleta{
+    
+    height: 70vh;
+
+    /* background-color: blue; */
+    
+}
+
+.ruleta__marcador{
+    position: absolute;
+    clip-path: polygon(0 10px,60px 0,60px 20px);
+    background: red;
+    box-shadow: 15px 13px 1px 1px rgb(161, 161, 161);
+    width: 60px;
+    height: 20px;
+    right: 34%;
+    /* z-index: -10; */
+}
+
+.main--contendor__boton_sorteo{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #de5454;
+    box-shadow: 15px 10px 30px 5px rgb(204, 204, 204);
+}
