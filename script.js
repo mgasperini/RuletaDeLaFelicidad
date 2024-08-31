@@ -56,7 +56,7 @@ for (var i = 0; i < array_salidas.length; i++) {
       (i * 2 * Math.PI) / array_salidas.length
   );
   context.translate(-center, -center);
-  context.font = "12px Sans Serif";
+  context.font = "10px Sans Serif";
   context.textAlign = "right";
   context.fillStyle = "black";
   context.fillText(array_salidas[i], canvas.width - 30, center);
